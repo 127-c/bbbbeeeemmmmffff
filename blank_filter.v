@@ -179,7 +179,7 @@ begin
     else if (en == 1'b0)
         o_sout_cz_sts_set <= 1'b0;
     else if (o_sout_cz_sts_set)
-        o_sout_cz_sts_set <= 1'b0; // interrupt hardware clean!!!!
+        o_sout_cz_sts_set <= 1'b0; // 向寄存器发出寄存硬件拉高的脉冲。
     else if (o_sout_pluse)
         o_sout_cz_sts_set <= 1'b1;
 end
